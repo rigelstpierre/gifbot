@@ -4,7 +4,7 @@ require 'net/http'
 require 'sinatra'
 
 class GifBot < Sinatra::Base
-  SLACK_TOKEN="..."
+  SLACK_TOKEN="wMGhyFDTEq8FQsmUkG3NBLDu"
   GIPHY_KEY="dc6zaTOxFJmzC"
   TRIGGER_WORD="#"
   IMAGE_STYLE="fixed_height" # or "fixed_width" or "original"
