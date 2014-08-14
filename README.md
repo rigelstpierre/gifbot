@@ -18,15 +18,19 @@ What better way to celebrate a teammate's _bon mot_, or to herald a successful c
 
 * Set up an outgoing webhook migration in Slack using `http://host:port/gif` as the URL, substituting the host and port that you'll be running the server on. (Unless you tell it otherwise, Sinatra runs on port 4567 by default.) You may opt to configure `#` as the default trigger word for the webhook.
 
-* Slack will give you an application token for this integration; note it. 
+* Slack will give you an application token for this integration; note it.
 
 * Edit `gifbot.rb` and set your `SLACK_TOKEN`. You _must_ do this or Gifbot will ignore all attempts to communicate.
 
 * Optionally, set `GIPHY_KEY` to your Giphy key, if you have one. The provided key is Giphy's public beta token and works out of the box, but they like you to [contact them](https://github.com/giphy/GiphyAPI) and ask for a real key if you're using Giphy for serious. You can also change the trigger word and the image style.
 
-* Run `./start_gifbot.sh` on a public webserver, in a screen(1) session or something. 
+* Run `./start_gifbot.sh` on a public webserver, in a screen(1) session or something.
 
 * Type `#kittens` into your Slack chat and voilà.
+
+## Heroku Deployment
+
+Want to deploy it to Heroku
 
 ## Are you kidding?
 
